@@ -1,0 +1,16 @@
+{
+    "watchForFileChanges": false,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "reporterEnabled": "mochawesome",
+      "mochawesomeReporterOptions": {
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      }
+    },
+    "screenshotsFolder": "cypress/assets/screenshots",
+    "baseUrl": "https://pathmotion.career-inspiration.com/app/home/"
+}
