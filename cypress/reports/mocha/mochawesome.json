@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-10-01T14:39:15.694Z",
-    "end": "2021-10-01T14:39:28.931Z",
-    "duration": 13237,
+    "start": "2021-10-03T17:03:22.352Z",
+    "end": "2021-10-03T17:03:31.836Z",
+    "duration": 9484,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4c1286e9-3b61-4857-b4c8-acfa951edfd1",
+      "uuid": "1baa7bb9-cd6b-40f6-8d6b-01f572dfa186",
       "title": "",
       "fullFile": "cypress/integration/Homepage.spec.js",
       "file": "cypress/integration/Homepage.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e0a0d4f4-9d59-4cb1-936e-983018c85f63",
+          "uuid": "0cafea14-637d-4e92-b952-9c77864fee22",
           "title": "Homepage tests",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should search using the keyword 'team'",
               "fullTitle": "Homepage tests should search using the keyword 'team'",
               "timedOut": null,
-              "duration": 13169,
+              "duration": 9367,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.get('.btns').click();\ncy.wait(2000);\ncy.get('#quick-search-bar').type('team');\ncy.get('button > svg').click();\ncy.wait(2000); //1. The number of results in the 'Discussions' column is 15\ncy.get('div.SearchResults__results--3vt64 >a').should('have.length', 15); //2. There is a 'Show more' element on the bottom of the list\ncy.get('div.SearchResults__showMoreButton__wrapper--17N8v > button').should('be.visible'); //3. There are 8 categories in the 'Filter by category' section\ncy.get('div.Filters__filters--2CzDk > button').should('have.length', 8);",
               "err": {},
-              "uuid": "5396272f-86d4-4c2b-974c-50bb7b2dc62b",
-              "parentUUID": "e0a0d4f4-9d59-4cb1-936e-983018c85f63",
+              "uuid": "bc78a6d3-b57f-49aa-a914-8e0179d87ad3",
+              "parentUUID": "0cafea14-637d-4e92-b952-9c77864fee22",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5396272f-86d4-4c2b-974c-50bb7b2dc62b"
+            "bc78a6d3-b57f-49aa-a914-8e0179d87ad3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13169,
+          "duration": 9367,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
