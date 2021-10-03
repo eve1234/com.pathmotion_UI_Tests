@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-03T15:36:59.054Z",
+    "end": "2021-10-03T15:37:11.233Z",
+    "duration": 12179,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "06ae62e7-00b9-43df-af5a-deb2dc79ef67",
+      "title": "",
+      "fullFile": "cypress/integration/Homepage.spec.js",
+      "file": "cypress/integration/Homepage.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "37a756db-ee9d-4c7c-bf92-9358dff0dd29",
+          "title": "Homepage tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should search using the keyword 'team'",
+              "fullTitle": "Homepage tests should search using the keyword 'team'",
+              "timedOut": null,
+              "duration": 12091,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.btns').click();\ncy.wait(2000);\ncy.get('#quick-search-bar').type('team');\ncy.get('button > svg').click();\ncy.wait(2000); //1. The number of results in the 'Discussions' column is 15\ncy.get('div.SearchResults__results--3vt64 >a').should('have.length', 15); //2. There is a 'Show more' element on the bottom of the list\ncy.get('div.SearchResults__showMoreButton__wrapper--17N8v > button').should('be.visible'); //3. There are 8 categories in the 'Filter by category' section\ncy.get('div.Filters__filters--2CzDk > button').should('have.length', 8);",
+              "err": {},
+              "uuid": "de6e7eea-02c5-4abe-8a77-c25755e832d3",
+              "parentUUID": "37a756db-ee9d-4c7c-bf92-9358dff0dd29",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "de6e7eea-02c5-4abe-8a77-c25755e832d3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12091,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
